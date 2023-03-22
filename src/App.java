@@ -15,7 +15,13 @@ public class App {
         } else if (smaller < 1) {
             System.out.println("O número menor não pode ser menor '1'");
         } else {
-            System.out.println("deu bom");
+            for (int i = smaller; i <= bigger; i++) {
+                String line = "";
+                for (int j = 1; j <= i; j++) {
+                    line += i;
+                }
+                System.out.println(line);
+            }
         }
     }
 }
